@@ -1,0 +1,1115 @@
+# Created by Octave 6.3.0, Sun Nov 28 15:00:35 2021 GMT <unknown@DESKTOP-32QBKNA>
+# name: Ff
+# type: function handle
+@<anonymous>
+@(A, B, q) Ff1 (A, B, q, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 7
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: Ff1
+# type: function handle
+@<anonymous>
+@(A, B, q, l1, l2, L1, L2, C2, C3) [C2 .* sin(A) - L1 + l1 .* cos(q) + l2 .* cos(B); -C2 .* cos(A) - L2 + l1 .* sin(q) - l2 .* sin(B)]
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: iJf
+# type: function handle
+@<anonymous>
+@(A, B) iJf1 (A, B, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 7
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: iJf1
+# type: function handle
+@<anonymous>
+@(A, B, l1, l2, L1, L2, C2, C3) [cos(B) ./ (C2 .* cos(A + B)), -sin(B) ./ (C2 .* cos(A + B)); sin(A) ./ (l2 .* cos(A + B)), -cos(A) ./ (l2 .* cos(A + B))]
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: Kf
+# type: function handle
+@<anonymous>
+@(A, B, q) Kf1 (A, B, q, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 7
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: Kf1
+# type: function handle
+@<anonymous>
+@(A, B, q, l1, l2, L1, L2, C2, C3) [l1 .* sin(B + q) ./ (C2 .* cos(A + B)); l1 .* cos(A - q) ./ (l2 .* cos(A + B))]
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: Lf
+# type: function handle
+@<anonymous>
+@(A, B, q) Lf1 (A, B, q, Kf (A, B, q) (1), Kf (A, B, q) (2), l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 8
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: Kf
+# type: function handle
+@<anonymous>
+@(A, B, q) Kf1 (A, B, q, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 7
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: Kf1
+# type: function handle
+@<anonymous>
+@(A, B, q, l1, l2, L1, L2, C2, C3) [l1 .* sin(B + q) ./ (C2 .* cos(A + B)); l1 .* cos(A - q) ./ (l2 .* cos(A + B))]
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: Lf1
+# type: function handle
+@<anonymous>
+@(A, B, q, Ka, Kb, l1, l2, L1, L2, C2, C3) [l1 .* ((Ka + Kb) .* sin(A + B) .* sin(B + q) + (Kb + 1) .* cos(A + B) .* cos(B + q)) ./ (C2 .* cos(A + B) .^ 2); l1 .* ((1 - Ka) .* sin(A - q) .* cos(A + B) + (Ka + Kb) .* sin(A + B) .* cos(A - q)) ./ (l2 .* cos(A + B) .^ 2)]
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: P1f
+# type: function handle
+@<anonymous>
+@(q) P1f1 (q, U1v, V1v, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 9
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: P1f1
+# type: function handle
+@<anonymous>
+@(q, U1, V1, l1, l2, L1, L2, C2, C3) [U1 .* cos(q) - V1 .* sin(q); U1 .* sin(q) + V1 .* cos(q)]
+
+
+# name: U1v
+# type: scalar
+-2.5
+
+
+# name: V1v
+# type: scalar
+0
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: KP1f
+# type: function handle
+@<anonymous>
+@(q) KP1f1 (q, U1v, V1v, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 9
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: KP1f1
+# type: function handle
+@<anonymous>
+@(q, U1, V1, l1, l2, L1, L2, C2, C3) [-U1 .* sin(q) - V1 .* cos(q); U1 .* cos(q) - V1 .* sin(q)]
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: U1v
+# type: scalar
+-2.5
+
+
+# name: V1v
+# type: scalar
+0
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: LP1f
+# type: function handle
+@<anonymous>
+@(q) LP1f1 (q, U1v, V1v, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 9
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: LP1f1
+# type: function handle
+@<anonymous>
+@(q, U1, V1, l1, l2, L1, L2, C2, C3) [-U1 .* cos(q) + V1 .* sin(q); -U1 .* sin(q) - V1 .* cos(q)]
+
+
+# name: U1v
+# type: scalar
+-2.5
+
+
+# name: V1v
+# type: scalar
+0
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: P2f
+# type: function handle
+@<anonymous>
+@(A, q) P2f1 (A, q, U2v, V2v, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 9
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: P2f1
+# type: function handle
+@<anonymous>
+@(A, q, U2, V2, l1, l2, L1, L2, C2, C3) [U2 .* sin(A) + V2 .* cos(A) + l1 .* cos(q); -U2 .* cos(A) + V2 .* sin(A) + l1 .* sin(q)]
+
+
+# name: U2v
+# type: scalar
+22
+
+
+# name: V2v
+# type: scalar
+0
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: KP2f
+# type: function handle
+@<anonymous>
+@(A, B, q) KP2f1 (A, q, Kf (A, B, q) (1), U2v, V2v, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 10
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: KP2f1
+# type: function handle
+@<anonymous>
+@(A, q, Ka, U2, V2, l1, l2, L1, L2, C2, C3) [Ka .* U2 .* cos(A) - Ka .* V2 .* sin(A) - l1 .* sin(q); Ka .* U2 .* sin(A) + Ka .* V2 .* cos(A) + l1 .* cos(q)]
+
+
+# name: Kf
+# type: function handle
+@<anonymous>
+@(A, B, q) Kf1 (A, B, q, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 7
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: Kf1
+# type: function handle
+@<anonymous>
+@(A, B, q, l1, l2, L1, L2, C2, C3) [l1 .* sin(B + q) ./ (C2 .* cos(A + B)); l1 .* cos(A - q) ./ (l2 .* cos(A + B))]
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: U2v
+# type: scalar
+22
+
+
+# name: V2v
+# type: scalar
+0
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: LP2f
+# type: function handle
+@<anonymous>
+@(A, B, q) LP2f1 (A, q, Kf (A, B, q) (1), Lf (A, B, q) (1), U2v, V2v, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 11
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: Kf
+# type: function handle
+@<anonymous>
+@(A, B, q) Kf1 (A, B, q, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 7
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: Kf1
+# type: function handle
+@<anonymous>
+@(A, B, q, l1, l2, L1, L2, C2, C3) [l1 .* sin(B + q) ./ (C2 .* cos(A + B)); l1 .* cos(A - q) ./ (l2 .* cos(A + B))]
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: LP2f1
+# type: function handle
+@<anonymous>
+@(A, q, Ka, La, U2, V2, l1, l2, L1, L2, C2, C3) [-Ka .^ 2 .* U2 .* sin(A) - Ka .^ 2 .* V2 .* cos(A) + La .* U2 .* cos(A) - La .* V2 .* sin(A) - l1 .* cos(q); Ka .^ 2 .* U2 .* cos(A) - Ka .^ 2 .* V2 .* sin(A) + La .* U2 .* sin(A) + La .* V2 .* cos(A) - l1 .* sin(q)]
+
+
+# name: Lf
+# type: function handle
+@<anonymous>
+@(A, B, q) Lf1 (A, B, q, Kf (A, B, q) (1), Kf (A, B, q) (2), l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 8
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: Kf
+# type: function handle
+@<anonymous>
+@(A, B, q) Kf1 (A, B, q, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 7
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: Kf1
+# type: function handle
+@<anonymous>
+@(A, B, q, l1, l2, L1, L2, C2, C3) [l1 .* sin(B + q) ./ (C2 .* cos(A + B)); l1 .* cos(A - q) ./ (l2 .* cos(A + B))]
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: Lf1
+# type: function handle
+@<anonymous>
+@(A, B, q, Ka, Kb, l1, l2, L1, L2, C2, C3) [l1 .* ((Ka + Kb) .* sin(A + B) .* sin(B + q) + (Kb + 1) .* cos(A + B) .* cos(B + q)) ./ (C2 .* cos(A + B) .^ 2); l1 .* ((1 - Ka) .* sin(A - q) .* cos(A + B) + (Ka + Kb) .* sin(A + B) .* cos(A - q)) ./ (l2 .* cos(A + B) .^ 2)]
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: U2v
+# type: scalar
+22
+
+
+# name: V2v
+# type: scalar
+0
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: P3f
+# type: function handle
+@<anonymous>
+@(B) P3f1 (B, U3v, V3v, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 9
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: P3f1
+# type: function handle
+@<anonymous>
+@(B, U3, V3, l1, l2, L1, L2, C2, C3) [L1 + U3 .* cos(B) + V3 .* sin(B); L2 - U3 .* sin(B) + V3 .* cos(B)]
+
+
+# name: U3v
+# type: scalar
+-17.5
+
+
+# name: V3v
+# type: scalar
+0
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: KP3f
+# type: function handle
+@<anonymous>
+@(A, B, q) KP3f1 (B, Kf (A, B, q) (2), U3v, V3v, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 10
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: KP3f1
+# type: function handle
+@<anonymous>
+@(B, Kb, U3, V3, l1, l2, L1, L2, C2, C3) [Kb .* (-U3 .* sin(B) + V3 .* cos(B)); -Kb .* (U3 .* cos(B) + V3 .* sin(B))]
+
+
+# name: Kf
+# type: function handle
+@<anonymous>
+@(A, B, q) Kf1 (A, B, q, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 7
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: Kf1
+# type: function handle
+@<anonymous>
+@(A, B, q, l1, l2, L1, L2, C2, C3) [l1 .* sin(B + q) ./ (C2 .* cos(A + B)); l1 .* cos(A - q) ./ (l2 .* cos(A + B))]
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: U3v
+# type: scalar
+-17.5
+
+
+# name: V3v
+# type: scalar
+0
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: LP3f
+# type: function handle
+@<anonymous>
+@(A, B, q) LP3f1 (B, Kf (A, B, q) (2), Lf (A, B, q) (2), U3v, V3v, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 11
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: Kf
+# type: function handle
+@<anonymous>
+@(A, B, q) Kf1 (A, B, q, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 7
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: Kf1
+# type: function handle
+@<anonymous>
+@(A, B, q, l1, l2, L1, L2, C2, C3) [l1 .* sin(B + q) ./ (C2 .* cos(A + B)); l1 .* cos(A - q) ./ (l2 .* cos(A + B))]
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: LP3f1
+# type: function handle
+@<anonymous>
+@(B, Kb, Lb, U3, V3, l1, l2, L1, L2, C2, C3) [-Kb .^ 2 .* U3 .* cos(B) - Kb .^ 2 .* V3 .* sin(B) - Lb .* U3 .* sin(B) + Lb .* V3 .* cos(B); Kb .^ 2 .* U3 .* sin(B) - Kb .^ 2 .* V3 .* cos(B) - Lb .* U3 .* cos(B) - Lb .* V3 .* sin(B)]
+
+
+# name: Lf
+# type: function handle
+@<anonymous>
+@(A, B, q) Lf1 (A, B, q, Kf (A, B, q) (1), Kf (A, B, q) (2), l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 8
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: Kf
+# type: function handle
+@<anonymous>
+@(A, B, q) Kf1 (A, B, q, l1v, l2v, L1v, L2v, C2v, C3v)
+# length: 7
+# name: C2v
+# type: scalar
+45
+
+
+# name: C3v
+# type: scalar
+35
+
+
+# name: Kf1
+# type: function handle
+@<anonymous>
+@(A, B, q, l1, l2, L1, L2, C2, C3) [l1 .* sin(B + q) ./ (C2 .* cos(A + B)); l1 .* cos(A - q) ./ (l2 .* cos(A + B))]
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: L1v
+# type: scalar
+13.919648195957343
+
+
+# name: L2v
+# type: scalar
+43.584959827901166
+
+
+# name: Lf1
+# type: function handle
+@<anonymous>
+@(A, B, q, Ka, Kb, l1, l2, L1, L2, C2, C3) [l1 .* ((Ka + Kb) .* sin(A + B) .* sin(B + q) + (Kb + 1) .* cos(A + B) .* cos(B + q)) ./ (C2 .* cos(A + B) .^ 2); l1 .* ((1 - Ka) .* sin(A - q) .* cos(A + B) + (Ka + Kb) .* sin(A + B) .* cos(A - q)) ./ (l2 .* cos(A + B) .^ 2)]
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: U3v
+# type: scalar
+-17.5
+
+
+# name: V3v
+# type: scalar
+0
+
+
+# name: l1v
+# type: scalar
+12.5
+
+
+# name: l2v
+# type: scalar
+1.5
+
+
+
+
+# name: Ff1
+# type: function handle
+@<anonymous>
+@(A, B, q, l1, l2, L1, L2, C2, C3) [C2 .* sin(A) - L1 + l1 .* cos(q) + l2 .* cos(B); -C2 .* cos(A) - L2 + l1 .* sin(q) - l2 .* sin(B)]
+
+
+# name: iJf1
+# type: function handle
+@<anonymous>
+@(A, B, l1, l2, L1, L2, C2, C3) [cos(B) ./ (C2 .* cos(A + B)), -sin(B) ./ (C2 .* cos(A + B)); sin(A) ./ (l2 .* cos(A + B)), -cos(A) ./ (l2 .* cos(A + B))]
+
+
+# name: Kf1
+# type: function handle
+@<anonymous>
+@(A, B, q, l1, l2, L1, L2, C2, C3) [l1 .* sin(B + q) ./ (C2 .* cos(A + B)); l1 .* cos(A - q) ./ (l2 .* cos(A + B))]
+
+
+# name: Lf1
+# type: function handle
+@<anonymous>
+@(A, B, q, Ka, Kb, l1, l2, L1, L2, C2, C3) [l1 .* ((Ka + Kb) .* sin(A + B) .* sin(B + q) + (Kb + 1) .* cos(A + B) .* cos(B + q)) ./ (C2 .* cos(A + B) .^ 2); l1 .* ((1 - Ka) .* sin(A - q) .* cos(A + B) + (Ka + Kb) .* sin(A + B) .* cos(A - q)) ./ (l2 .* cos(A + B) .^ 2)]
+
+
+# name: P1f1
+# type: function handle
+@<anonymous>
+@(q, U1, V1, l1, l2, L1, L2, C2, C3) [U1 .* cos(q) - V1 .* sin(q); U1 .* sin(q) + V1 .* cos(q)]
+
+
+# name: KP1f1
+# type: function handle
+@<anonymous>
+@(q, U1, V1, l1, l2, L1, L2, C2, C3) [-U1 .* sin(q) - V1 .* cos(q); U1 .* cos(q) - V1 .* sin(q)]
+
+
+# name: LP1f1
+# type: function handle
+@<anonymous>
+@(q, U1, V1, l1, l2, L1, L2, C2, C3) [-U1 .* cos(q) + V1 .* sin(q); -U1 .* sin(q) - V1 .* cos(q)]
+
+
+# name: P2f1
+# type: function handle
+@<anonymous>
+@(A, q, U2, V2, l1, l2, L1, L2, C2, C3) [U2 .* sin(A) + V2 .* cos(A) + l1 .* cos(q); -U2 .* cos(A) + V2 .* sin(A) + l1 .* sin(q)]
+
+
+# name: KP2f1
+# type: function handle
+@<anonymous>
+@(A, q, Ka, U2, V2, l1, l2, L1, L2, C2, C3) [Ka .* U2 .* cos(A) - Ka .* V2 .* sin(A) - l1 .* sin(q); Ka .* U2 .* sin(A) + Ka .* V2 .* cos(A) + l1 .* cos(q)]
+
+
+# name: LP2f1
+# type: function handle
+@<anonymous>
+@(A, q, Ka, La, U2, V2, l1, l2, L1, L2, C2, C3) [-Ka .^ 2 .* U2 .* sin(A) - Ka .^ 2 .* V2 .* cos(A) + La .* U2 .* cos(A) - La .* V2 .* sin(A) - l1 .* cos(q); Ka .^ 2 .* U2 .* cos(A) - Ka .^ 2 .* V2 .* sin(A) + La .* U2 .* sin(A) + La .* V2 .* cos(A) - l1 .* sin(q)]
+
+
+# name: P3f1
+# type: function handle
+@<anonymous>
+@(B, U3, V3, l1, l2, L1, L2, C2, C3) [L1 + U3 .* cos(B) + V3 .* sin(B); L2 - U3 .* sin(B) + V3 .* cos(B)]
+
+
+# name: KP3f1
+# type: function handle
+@<anonymous>
+@(B, Kb, U3, V3, l1, l2, L1, L2, C2, C3) [Kb .* (-U3 .* sin(B) + V3 .* cos(B)); -Kb .* (U3 .* cos(B) + V3 .* sin(B))]
+
+
+# name: LP3f1
+# type: function handle
+@<anonymous>
+@(B, Kb, Lb, U3, V3, l1, l2, L1, L2, C2, C3) [-Kb .^ 2 .* U3 .* cos(B) - Kb .^ 2 .* V3 .* sin(B) - Lb .* U3 .* sin(B) + Lb .* V3 .* cos(B); Kb .^ 2 .* U3 .* sin(B) - Kb .^ 2 .* V3 .* cos(B) - Lb .* U3 .* cos(B) - Lb .* V3 .* sin(B)]
+
+

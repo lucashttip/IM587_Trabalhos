@@ -1,0 +1,7 @@
+{
+    // "pandoc.pdfOptString": "-s -t beamer --template=unicamp1.latex"
+    "pandoc.pdfOptString": "-s --template=unicamp1.latex"
+    // "pandoc.pdfOptString": "-s -V documentclass=abntex2 --template=abntex2.latex"
+    // "pandoc.pdfOptString": "-V documentclass=abntex2 --template=abntex2.latex -s --citeproc -V lang=en-US,pt-BR -V papersize=a4paper -V fontsize=12pt -V classoption=twoside -V classoption=openright -V linkcolor=blue"
+
+}
